@@ -1,0 +1,145 @@
+.get-wrapped {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--Bg-Dark-Blue-04);
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 5px 4px rgb(0, 0, 0, 0.1);
+  margin: 0 auto;
+  padding-inline: 2rem;
+  padding-block: 1.3rem;
+  width: 50%;
+
+  position: relative;
+  top: 70px;
+}
+
+.get-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 90%;
+}
+
+.get-top__title {
+  color: var(--clr-White);
+  font-size: 1.625rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.get-top__paragraph {
+  color: var(--clr-White);
+  font-size: 12px;
+  text-align: center;
+  opacity: 0.7;
+}
+
+.get-bottom {
+  display: inline-flex;
+  gap: 1rem;
+  padding-block: 1rem;
+  padding-inline: 2rem;
+  width: 100%;
+}
+
+.get-bottom__group{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: .25rem;
+  height: 60px;
+    /* Evita que se desplaze al agregar el 'span' con el msj de error */
+
+}
+
+.get-bottom__email {
+  border-radius: 2rem;
+  border-style: none;
+  font-size: 12px;
+  padding-left: 1rem;
+  padding-block: 0.55rem;
+  width: 100%;
+}
+.get-bottom__email::placeholder {
+  opacity: 0.7;
+}
+.get-bottom__email:focus,
+.get-bottom__email:focus-visible {
+  outline: 2px dashed var(--clr-Cyan);
+}
+
+.get-bottom__email-error{
+  width: 90%;
+  margin-left: 17px;
+  font-size: 10px;
+  color: var(--clr-Light-Red-Error);
+}
+
+.btn-large {
+  color: var(--clr-White);
+  cursor: pointer;
+  border-radius: 2rem;
+  border-style: none;
+  background-image: linear-gradient(to left, var(--clr-Blue), var(--clr-Cyan));
+  font-size: 12px;
+  padding-block: 0.55rem;
+  height: max-content;
+  width: 190px;
+  transition: 0.35s;
+}
+.btn-large:hover {
+  box-shadow: 0px 0px 10px var(--clr-Blue);
+  text-shadow: 1px 1px var(--clr-Blue);
+}
+.btn-large:focus,
+.btn-large:focus-visible {
+  outline: 2px dashed var(--clr-Cyan);
+  text-shadow: 1px 1px var(--clr-Blue);
+}
+
+/* Mensaje de error */
+.error{
+  border: 2px solid var(--clr-Light-Red-Error);
+}
+.error:focus,
+.error:focus-visible{
+  outline: none;
+  border: 2px dashed var(--clr-Light-Red-Error);
+}
+
+
+
+@media (max-width: 376px) {
+  .get-wrapped {
+    width: 90%;
+    top: 120px;
+  }
+
+  .get-top {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .get-top__title {
+    font-size: 1.2rem;
+  }
+
+  .get-top__paragraph {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .get-bottom {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .btn-large {
+    width: 100%;
+  }
+}

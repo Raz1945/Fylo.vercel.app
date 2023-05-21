@@ -1,0 +1,71 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding-block: 1rem;
+  height: 95vh;
+  /* No es 100vh porque el Navbar un height de 5vh */
+  width: 100%;
+}
+
+.header-img{
+  background-color: var(--Bg-Dark-Blue-01);
+  background-image: url("/public/icons/bg-curvy-desktop.svg") ;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+  /* Ver el tema de la posicion del fondo */
+}
+
+.header__wrapper {
+  text-align: center;
+  width: 500px;
+}
+
+.header__img {
+  width: 65vh;
+  /* Ver que medida conviene usar */
+}
+
+.header__title {
+  color: var(--clr-White);
+  font-weight: 700;
+  font-size: 1.625rem;
+  line-height: 1.4;
+}
+
+.header__sub {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 2.7rem;
+}
+
+.header__sub-text {
+  color: var(--clr-White);
+  font-weight: 400;
+  line-height: 1.4;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 376px) {
+  .header__wrapper {
+    text-align: center;
+    width: fit-content;
+  }
+
+  .header__title {
+    padding-inline: 1rem;
+  }
+
+  .header__img {
+    width: 35vh;
+  }
+
+  .header__sub {
+    padding-inline: 3rem;
+  }
+}

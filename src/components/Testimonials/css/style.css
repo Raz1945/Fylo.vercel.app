@@ -1,0 +1,94 @@
+.testimonials-container {
+  /* Aplicando Grid puedo hacer una "cuadricula", la cual no se modufica 
+  por mas que agrege otros testimonios  */
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+
+  align-items: center;
+  padding-block: 2rem;
+  padding-inline: 7rem;
+
+  color: var(--clr-White);
+  width: 100%;
+  height: 50vh;
+  /* height: fit-content; */
+}
+
+.comillas {
+  background-image: url(/public\images\bg-quotes.png);
+  background-position: 6.5rem 3.2rem;
+  /* background-position: 6.5rem 0.2rem; */
+  background-repeat: no-repeat;
+  background-size: 3.2rem;
+}
+
+.testimonials-item {
+  background-color: var(--Bg-Dark-Blue-04);
+  border-radius: 0.5rem;
+
+  box-shadow: 2px 2px 5px 4px rgb(0, 0, 0, 0.1);
+  /* Ver Sombra */
+
+  padding-block: 1.5rem;
+  padding-inline: 1.5rem;
+
+  max-width: 300px;
+  width: 100%;
+  height: fit-content;
+}
+
+.testimonials-text {
+  font-size: 13px;
+  line-height: 1.5;
+  opacity: 0.7;
+}
+
+/* Avatar */
+.testimonials-avatar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding-block: 1rem 0rem;
+}
+
+.testimonials-avatar__img {
+  border-radius: 50%;
+  width: 1.7rem;
+}
+
+.testimonials-avatar__text {
+  line-height: 1.5;
+}
+
+.testimonials-avatar__h2 {
+  font-weight: 700;
+  font-size: 10px;
+}
+
+.testimonials-avatar__p {
+  opacity: 0.7;
+  font-size: 8px;
+}
+
+@media (max-width: 376px) {
+  .testimonials-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding-inline: 1.5rem;
+    height: 90vh;
+
+  }
+
+  .testimonials-item {
+    max-width: max-content;
+  }
+
+  .comillas {
+    background-position: 1.7rem .6rem;
+    background-size: 2rem;
+  }
+}

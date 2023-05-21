@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+:root {
+  --Bg-Dark-Blue-01:hsl(217, 28%, 15%); 
+  --Bg-Dark-Blue-02:hsl(218, 28%, 13%); 
+  --Bg-Dark-Blue-03:hsl(216, 53%, 9%);
+  --Bg-Dark-Blue-04:hsl(219, 30%, 18%);
+
+  --clr-Cyan:hsl(176, 68%, 64%);
+  --clr-Blue:hsl(198, 60%, 50%);
+  --clr-Light-Red-Error:hsl(0, 100%, 63%);
+  --clr-White: hsl(0, 0%, 100%);
+
+  --fz-14px: 14px;
+
+  --ff-Raleway: 'Raleway', sans-serif;
+  --ff-Open-Sans: 'Open Sans', sans-serif;
+
+  background-color: var(--Bg-Dark-Blue-02);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+  /* scroll-padding-top:5vh; */
+}
+
+body {
+  min-width: 375px;
+  min-height: 100vh;
+
+  max-width: 1440px; /* Ver resolucion max */
+}
+
+a {
+  text-decoration: none;
+}
